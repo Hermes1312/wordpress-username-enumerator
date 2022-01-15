@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP-User-Enumeration", "WP-User-Enumeration\WP-User-Enumeration.csproj", "{8074943F-5F09-4565-B21E-218A369B35A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8074943F-5F09-4565-B21E-218A369B35A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8074943F-5F09-4565-B21E-218A369B35A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8074943F-5F09-4565-B21E-218A369B35A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8074943F-5F09-4565-B21E-218A369B35A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60656782-A47B-47DA-8996-23F25B79A98B}
+	EndGlobalSection
+EndGlobal
