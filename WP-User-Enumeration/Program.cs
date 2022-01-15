@@ -68,7 +68,9 @@ namespace WP_User_Enumeration
                 }
             }
 
-            File.WriteAllLines(path, resultList);
+            if(resultList.Count > 0)
+                File.WriteAllLines(path, resultList);
+
             Console.WriteLine($"\r\n[!] Complete! Found {resultList.Count} usernames");
         }
     }
