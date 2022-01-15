@@ -52,7 +52,7 @@ namespace WP_User_Enumeration
                     Console.ReadKey();
                 }
 
-                if (resultList.Count > 0) File.WriteAllLines(url.DnsSafeHost, resultList);
+                if (resultList.Count > 0) File.WriteAllLines(url.DnsSafeHost+".txt", resultList);
 
                 Console.WriteLine($"\r\n[!] Founded usernames: {string.Join(',', resultList)}");
                 Console.WriteLine($"[!] Total {resultList.Count} usernames saved to file. Click any key...");
