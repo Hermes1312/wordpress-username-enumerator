@@ -59,7 +59,8 @@ namespace WP_User_Enumeration
 
                 if (resultList.Count > 0) File.WriteAllLines(path, resultList);
 
-                Console.WriteLine($"\r\n[!] Complete! Found {resultList.Count} usernames. Click any key...");
+                Console.WriteLine($"\r\n[!] Founded usernames: {string.Join(',', resultList)}");
+                Console.WriteLine($"[!] Total {resultList.Count} usernames saved to file. Click any key...");
                 Console.ReadKey();
             }
         }
