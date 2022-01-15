@@ -22,7 +22,7 @@ namespace WP_User_Enumeration
                 Console.Clear();
 
                 Uri url;
-                string path, urlString;
+                string urlString;
                 var resultList = new List<string>();
 
                 Console.WriteLine("\n|==========| Wordpress Username Enumerator |==========|\n");
@@ -32,11 +32,6 @@ namespace WP_User_Enumeration
 
                 if (urlString[..4] != "http") urlString = "http://" + urlString;
                 url = new Uri(urlString);
-
-
-                Console.Write("Output path: ");
-                path = Console.ReadLine();
-
 
                 Console.WriteLine("\n[+] Enumerating all users...");
 
@@ -57,7 +52,7 @@ namespace WP_User_Enumeration
                     Console.ReadKey();
                 }
 
-                if (resultList.Count > 0) File.WriteAllLines(path, resultList);
+                if (resultList.Count > 0) File.WriteAllLines(url.DnsSafeHost, resultList);
 
                 Console.WriteLine($"\r\n[!] Founded usernames: {string.Join(',', resultList)}");
                 Console.WriteLine($"[!] Total {resultList.Count} usernames saved to file. Click any key...");
