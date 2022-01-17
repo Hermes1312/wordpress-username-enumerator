@@ -15,7 +15,7 @@ namespace WP_User_Enumeration
             Enumerator(args);
         }
 
-        private static void Enumerator(string[] args)
+        private static void Enumerator(IReadOnlyList<string> args)
         {
             while (true)
             {
@@ -26,7 +26,7 @@ namespace WP_User_Enumeration
 
                 Console.WriteLine("\n|==========| Wordpress Username Enumerator |==========|\n");
 
-                if (args is null)
+                if (args == null || args.Count == 0)
                 {
                     Console.Write("Target URL: ");
                     urlString = Console.ReadLine();
@@ -64,6 +64,7 @@ namespace WP_User_Enumeration
                 Console.WriteLine($"\r\n[!] Logins found: {string.Join(',', resultList)}");
                 Console.WriteLine($"[!] Total {resultList.Count} logins saved to file. Click any key...");
                 Console.ReadKey();
+                args = null;
             }
         }
     }
